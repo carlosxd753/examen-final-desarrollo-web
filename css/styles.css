@@ -1,0 +1,92 @@
+/* Inicio de Animaciones */
+.zoom img {
+  transition: transform 0.3s ease;
+}
+.zoom:hover img {
+  transform: scale(1.1);
+}
+
+.rotate {
+  transition: transform 0.5s ease;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes pulso {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.pulse {
+  animation: pulso 1.5s infinite;
+}
+
+.card {
+  transition: opacity 0.3s ease;
+}
+.card:hover {
+  opacity: 0.9;
+}
+
+.input-expand {
+  transition: transform 0.3s ease;
+}
+.input-expand:focus {
+  transform: scale(1.01);
+}
+
+.btn-hov:hover {
+  background-color: white;
+  color: lightcoral;
+}
+
+.color-cycle {
+  animation: cambioDeColor 3s infinite alternate;
+}
+@keyframes cambioDeColor {
+  0% {
+    color: antiquewhite;
+  }
+  100% {
+    color: white;
+  }
+}
+/* Final de Animaciones */
+
+.body-background-color {
+  background-color: lightcoral;
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+}
+
+footer p {
+  color: antiquewhite;
+}
+
+.btn-personalizado {
+  color: lightcoral;
+  background-color: antiquewhite;
+  border-color: antiquewhite;
+}
+
+.card-custom {
+  border: 1px solid lightcoral;
+}
+
+.card-custom h5 {
+  color: lightcoral;
+}
+
+.card-custom p {
+  color: lightcoral;
+}
